@@ -1,0 +1,7 @@
+<!-- Should display the task's details (content, date of creation, etc.) and a back-link to the index page. -->
+
+<h2><%= @task.name %></h2>
+<p><%= @task.description %></p>
+<p><%= @task.created_at %></p>
+<p><%= @task.updated_at %></p>
+<p><%= link_to "Back to list of tasks", tasks_path %></p>
